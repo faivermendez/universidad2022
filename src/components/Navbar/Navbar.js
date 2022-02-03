@@ -1,21 +1,26 @@
 import React, {useState, useEffect} from 'react';
 import { BiMenu, BiX } from "react-icons/bi";
 import {Button} from '../../Globalstyles';
-import logo2 from '../../images/logo2.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
+import md5 from 'md5';
+
+import Cookies from 'universal-cookie';
 import 
 {
     Nav,
     NavbarContainer,
     NavLogo,
-    Img,
+    Imgw,
     MenuIcon,
     Menu,
     MenuItem,
     MenuLink,
     MenuItemBtn,
     MenuLinkBtn,
+    
 } from './Navbar.styles';
-
+import LOGO from '../../images/logo.png';
 const Navbar = () => {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -35,51 +40,54 @@ const Navbar = () => {
     }, []);
     window.addEventListener('resize', showButton);
     
+    
+    
     return (
         <div>
             
                 <Nav>
                     <NavbarContainer>
-                        <img src={logo2} width="80px" />
                         <NavLogo to="/">
                        
-                       UNIVERSIDAD <br></br>
-                       AUTÓNOMA DE NEIVA
+                           
+                              UNIVERSIDAD AUTONOMA DE NEIVA
                         </NavLogo>
                         <MenuIcon onClick={handleClick}>
                             {click ? <BiX/> : <BiMenu/>}
                         </MenuIcon>
-                        
 
                         <Menu onClick={handleClick} click={click}>
                             
                             
                             <MenuItem>
-                                <MenuLink onClick={closeMenu} to="/profesor">COMUNIDAD</MenuLink>
+                                <MenuLink onClick={closeMenu} to="/profesor">CARRERAS</MenuLink>
                             </MenuItem>
-                            <MenuItem>
-                                <MenuLink onClick={closeMenu} to="/horario">HORARIOS</MenuLink>
-                            </MenuItem>
-                            <MenuItem>
-                                <MenuLink onClick={closeMenu} to="/recipe">REGISTRAR</MenuLink>
-                            </MenuItem>
+                           
                             <MenuItemBtn>
                                 {button?(
-                                    <MenuLinkBtn to="/entra">
+                                    <MenuLinkBtn to="/maestro">
                                         <Button primary>ENTRAR</Button>
                                     </MenuLinkBtn>
                                 ): (
-                                    <MenuLinkBtn to="/entra">
+                                    <MenuLinkBtn to="/maestro">
                                         <Button primary bigFont onClick={closeMenu}>ENTRAR</Button>
                                     </MenuLinkBtn>
+
+
+
+                                    
                                 )
                                 }
                             </MenuItemBtn>
+
+                            
                         </Menu>
 
                     </NavbarContainer>
 
                 </Nav>
+
+
             
         </div>
     )

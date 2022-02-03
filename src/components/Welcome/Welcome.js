@@ -11,7 +11,7 @@ import {
     Imgw,
     Img
 } from './Welcome.styles';
-import logo1 from '../../images/logo1.png';
+import LOGO from '../../images/LOGO.jpg';
 import TI from '../../images/TI.jpg';
 import P12 from '../../images/foto12.jpg';
 const Welcome = () => {
@@ -26,7 +26,7 @@ const Welcome = () => {
                         <Img src={TI} alt="TI"/>
                     </WelcomeImg>
                     <WelcomeContentText>
-                    <Imgw src={logo1}/> 
+                    <Imgw src={LOGO}/> 
                         <WelcomeContentTitle>γεια σας</WelcomeContentTitle>
                         <WelcomeText>
                         bienvenidos, ante  la Asociación Nacional de Escuelas Particulares

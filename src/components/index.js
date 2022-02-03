@@ -15,7 +15,12 @@ export {default as Regresos} from './/Regresos/Regresos';
 export {default as Clases} from './/Clases/Clases';
 export {default as Paginas} from './Paginas/Paginas';
 export {default as Nasas} from './Nasas/Nasas';
+export {default as Appr} from './Appr';
 export {default as Organigramas} from './Organigramas/Organigramas';
+export {default as Menu} from './Menu/Menu';
+export {default as Login} from './Login/Login';
+export {default as Logun} from './Logun/Logun';
+
 
 
 

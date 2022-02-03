@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import { BiMenu, BiX } from "react-icons/bi";
 import {Button} from '../../Globalstyles';
 
+
 import {
     WelcomeContainer, 
     WelcomeContent,
@@ -67,22 +68,7 @@ const Paginas = () => {
             <WelcomeContainer>
             <Imger src={HR} />
             </WelcomeContainer>
-            <MenuItemBtn>
-                                {button?(
-                                    <MenuLinkBtn to="/">
-                                        <Button primary>SALIR</Button>
-                                    </MenuLinkBtn>
-                                    
-                                ): (
-                                    <MenuLinkBtn to="/">
-                                        <Button primary bigFont onClick={closeMenu}>SALIR</Button>
-                                    </MenuLinkBtn>
-                                )
-                                }
-                                
-
-                                
-                            </MenuItemBtn>
+            
             
         </div>
     )

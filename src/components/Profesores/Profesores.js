@@ -28,11 +28,13 @@ import {
 import PL1 from '../../images/PL1.jpg';
 import PL2 from '../../images/PL2.jpg';
 import PL3 from '../../images/PL3.jpg';
-import P12 from '../../images/foto12.jpg';
-import LNC from '../../images/LNC.png';
-import LD from '../../images/LD.png';
-import LP from '../../images/LP.png';
-import LM from '../../images/LM.png';
+import PL4 from '../../images/PL4.jpg';
+import PL5 from '../../images/PL5.jpg';
+import PL6 from '../../images/PL6.jpg';
+import PL7 from '../../images/PL7.jpg';
+import PL8 from '../../images/PL8.jpg';
+import PL9 from '../../images/PL9.jpg';
+
 
 
 const Profesores = () => {
@@ -57,9 +59,9 @@ const Profesores = () => {
     return (
         <div>
            <WorksContent>
-           <WorksContainer>
-            <WorCardTitle> <Imgw src={LNC}/> NUESTRA COMUNIDAD </WorCardTitle>
-            <Imgr src={P12}/> </WorksContainer>
+          
+            <WorCardTitle>  QUE TE GUSTARIA ESTUDIAR? </WorCardTitle>
+           
         
             <WorksContainer>
             
@@ -68,8 +70,8 @@ const Profesores = () => {
                     <MenuIcon onClick={handleClick}>
                             {click ? <BiX/> : <BiMenu/>}
                         </MenuIcon>
-                                <MenuLink onClick={closeMenu} to="directiva"><Imge src={PL1}/> </MenuLink>
-                                <WorksCardTitle><Imgse src={LD}/> DIRECTIVOS</WorksCardTitle>
+                                <MenuLink onClick={closeMenu} to="/nasa"><Imge src={PL1}/> </MenuLink>
+                                <WorksCardTitle> LICENCIATURA QUIMICA</WorksCardTitle>
                     
                     </WorksCard>
                     <WorksCard>
@@ -77,16 +79,70 @@ const Profesores = () => {
                     <MenuIcon onClick={handleClick}>
                             {click ? <BiX/> : <BiMenu/>}
                         </MenuIcon>
-                                <MenuLink onClick={closeMenu} to="maestro"><Imge src={PL2}/> </MenuLink>
-                                <WorksCardTitle><Imgse src={LM}/> PROFESORES</WorksCardTitle>
+                                <MenuLink onClick={closeMenu} to="/regreso"><Imge src={PL2}/> </MenuLink>
+                                <WorksCardTitle> MATEMATICAS APLICADAS</WorksCardTitle>
                     </WorksCard>
                     </WorksCard>
                     <WorksCard>
                     <MenuIcon onClick={handleClick}>
                             {click ? <BiX/> : <BiMenu/>}
                         </MenuIcon>
-                                <MenuLink onClick={closeMenu} to="order"><Imge src={PL3}/> </MenuLink>
-                                <WorksCardTitle><Imgse src={LP}/> ESTUDIANTES</WorksCardTitle>
+                                <MenuLink onClick={closeMenu} to="/"><Imge src={PL3}/> </MenuLink>
+                                <WorksCardTitle> MEDICINA</WorksCardTitle>
+                    </WorksCard>
+                </WorksCardContent>
+
+                <WorksCardContent>
+                <WorksCard>
+                    <MenuIcon onClick={handleClick}>
+                            {click ? <BiX/> : <BiMenu/>}
+                        </MenuIcon>
+                                <MenuLink onClick={closeMenu} to="/nasa"><Imge src={PL4}/> </MenuLink>
+                                <WorksCardTitle> DERECHO</WorksCardTitle>
+                    
+                    </WorksCard>
+                    <WorksCard>
+                         <WorksCard>
+                    <MenuIcon onClick={handleClick}>
+                            {click ? <BiX/> : <BiMenu/>}
+                        </MenuIcon>
+                                <MenuLink onClick={closeMenu} to="/"><Imge src={PL5}/> </MenuLink>
+                                <WorksCardTitle> CONTADURIA</WorksCardTitle>
+                    </WorksCard>
+                    </WorksCard>
+                    <WorksCard>
+                    <MenuIcon onClick={handleClick}>
+                            {click ? <BiX/> : <BiMenu/>}
+                        </MenuIcon>
+                                <MenuLink onClick={closeMenu} to="/"><Imge src={PL6}/> </MenuLink>
+                                <WorksCardTitle> ENFERMERIA</WorksCardTitle>
+                    </WorksCard>
+                </WorksCardContent>
+
+                <WorksCardContent>
+                <WorksCard>
+                    <MenuIcon onClick={handleClick}>
+                            {click ? <BiX/> : <BiMenu/>}
+                        </MenuIcon>
+                                <MenuLink onClick={closeMenu} to="/"><Imge src={PL7}/> </MenuLink>
+                                <WorksCardTitle> ARTES PLASTICAS</WorksCardTitle>
+                    
+                    </WorksCard>
+                    <WorksCard>
+                         <WorksCard>
+                    <MenuIcon onClick={handleClick}>
+                            {click ? <BiX/> : <BiMenu/>}
+                        </MenuIcon>
+                                <MenuLink onClick={closeMenu} to="/"><Imge src={PL8}/> </MenuLink>
+                                <WorksCardTitle> INGENIERIA DE SOFTWARE</WorksCardTitle>
+                    </WorksCard>
+                    </WorksCard>
+                    <WorksCard>
+                    <MenuIcon onClick={handleClick}>
+                            {click ? <BiX/> : <BiMenu/>}
+                        </MenuIcon>
+                                <MenuLink onClick={closeMenu} to="/"><Imge src={PL9}/> </MenuLink>
+                                <WorksCardTitle> INGENIERIA ELECTRONICA</WorksCardTitle>
                     </WorksCard>
                 </WorksCardContent>
 

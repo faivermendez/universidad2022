@@ -1,13 +1,14 @@
-import {Works, Welcome, Recipes,Noticias} from '../../components';
+import {Works, Welcome, Recipes,Noticias,Footer} from '../../components';
 
 function Home() {
     return (
         <div>
            
-            <Welcome/>
+          
            
-            <Noticias/>
+            
             <Works/>
+            <Footer/>
             
             
     

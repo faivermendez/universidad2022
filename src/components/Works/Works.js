@@ -12,6 +12,7 @@ import {
     Imges,
     Img,
     Imgw,
+    Imger,
     WorCardTitle,
     NavLogo,
     MenuIcon,
@@ -23,6 +24,7 @@ import P1 from '../../images/org.jpg';
 import LO from '../../images/LO.jpg';
 import LC from '../../images/LC.jpg';
 import P12 from '../../images/foto12.jpg';
+import NRM52 from '../../images/NRM521.jpeg';
 const Works = () => {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -43,49 +45,33 @@ const Works = () => {
     window.addEventListener('resize', showButton);
     
     return (
-        <div>SA
+        <div>
+          
             <WorksContent>
-            <WorksContainer> 
-            <WorCardTitle> 
+            <Imger src={NRM52}/>
             
-                
-            <Imgw src={LC}/>
-                 CONOCENOS </WorCardTitle>
-            <Img src={P12}/> </WorksContainer>
                 <WorksContainer>
-                
                     <WorksCardContent>
                         <WorksCard>
                 
                             <WorksCardTitle>MISION</WorksCardTitle>
                             <WorksCardText>
-                            NUEVA GRANADA tiene como Misión, formar mediante un modelo basado en competencias,
-                             a Profesionales Técnicos y Profesionales Técnicos Bachiller, capacita
+                            UNIVERSIDAD AUTONOMA DE NEIVA tiene como Misión, formar mediante un modelo basado en competencias,
+                             a Profesionales Técnicos y Profesionales , capacita
                              y evalúa con fines de certificación de competencias laborales y servicios 
                             tecnológicos para atender las necesidades del sector productivo del país..
                             </WorksCardText>
                         </WorksCard>
-
-                        <WorsCard>
-                        <NavLogo to="/organigrama">
-                <Imges src={LO}/>
-                
-                 </NavLogo>
-                 <MenuIcon onClick={handleClick}>
-                     {click ? <BiX/> : <BiMenu/>}
-                 </MenuIcon>
-                            <WorksCardTitle>ORGANIGRAMA</WorksCardTitle>
-                            <WorksCardText>
-                
-                            </WorksCardText>
-                        </WorsCard>
+                        <WorksCardText></WorksCardText>
+  
+                       
                         
                         <WorksCard>
                            
                             <WorksCardTitle>VISION</WorksCardTitle>
                             <WorksCardText>
-                            una Institución líder en la  formación de Profesionales Técnicos y Profesionales
-                             Técnicos  Bachiller en México, que cursan programas reconocidos, basados en el 
+                            UNIVERSIDAD AUTONOMA DE NEIVA  líder en la  formación de Profesionales Técnicos y Profesionales
+                             Técnicos de neiva, que cursan programas reconocidos, basados en el 
                              Modelo Dual y que egresan con competencias laborales y valores sociales que les 
                              permiten ser competitivos en el mercado laboral y continuar estudios superiores.. 
                             </WorksCardText>

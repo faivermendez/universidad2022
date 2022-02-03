@@ -9,6 +9,8 @@ import {
     MealsWrapper,
     MealsImage,
     Imge,
+   
+    Imgee,
     MealsContent,
     MealsContentTitle,
     MealsContentText,
@@ -27,6 +29,8 @@ import {
 import NR1 from '../../images/NR1.jpg';
 import P12 from '../../images/foto12.jpg';
 import LN from '../../images/LN.png';
+import NRM58 from '../../images/NRM58.jpeg';
+import NRM528 from '../../images/NRM528.jpeg';
 function Regresos() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -49,40 +53,65 @@ function Regresos() {
     return (
         <div>
             <MealsContentTitle> </MealsContentTitle>
-            <MealsContentTitle>REGRESO A CLASES </MealsContentTitle>
+            <MealsContentTitle>MATEMATICA APLICADA </MealsContentTitle>
            <MealsContent>
-           <Imge src={NR1}/>
+           <Imgee src={NRM58}/>
                         <MealsContentText>
+                        La matematica aplicada  se encarga del estudio, diseño, manutención, 
+                        evaluación, optimización, simulación, construcción y operación de todo tipo de elementos en la industria 
+                        de procesos, que es aquella relacionada con la producción industrial de compuestos y productos cuya 
+                        elaboración requiere de sofisticadas transformaciones físicas y químicas de la materia.
                         
-                        Todo es cuestión de que el comité de salud actualice y cuando diga qué hay condiciones para regresar a clases les avisaremos. Nuestros niños y niñas es lo más preciado que tenemos y será lo último que va a regresar a la nueva normalidad”, indicó
-Ante el panorama que muestra la pandemia del covid-19 podría ser el regreso a clases presenciales hasta enero del 2021, de lo que se trata es de reducir al máximo los riesgos para la población.
-
-El Secretario de Educación en Tamaulipas destacó que por el momento no hay planes para el regreso y en caso de algún cambio se dará a conocer en forma oportuna
-
-“Estamos viendo si se regresa con grupos quebrados, con horarios diferidos eso dependerá de las condiciones del covid”, indicó
-Aseguró que es mínimo el rezago de los alumnos que no tienen acceso a internet y que no cuentan con un dispositivo para hacerlo “hay algunas zonas de alta marginación donde se presentan estos rezagos”.
-
-En este sentido destacó que será un seis por ciento de la matrícula, por lo que se están buscando alternativas porque no desean que ningún alumno se retrase.
-
                         </MealsContentText>
-        
+                        <MealsContentTitle> HISTORIA </MealsContentTitle>
 
+                        <MealsContentText>
+                        La matematica aplicada encarga del estudio, diseño, manutención, 
+                        evaluación, optimización, simulación, construcción y operación de todo tipo de elementos en la industria 
+                        de procesos, que es aquella relacionada con la producción industrial de compuestos y productos cuya 
+                        elaboración requiere de sofisticadas transformaciones físicas y químicas de la materia.
+                        
+                        </MealsContentText>
+                        <MealsContentTitle> QUE ESTUDIO EN MATEMATICA APLICADA</MealsContentTitle>
+        
+                        <Imge src={NRM528}/>
                         <MenuItemBtn>
                                 {button?(
-                                    <MenuLinkBtn to="/noticia">
-                                        <Button primary>MAS NOTICIAS</Button>
+                                    <MenuLinkBtn to="/profesor">
+                                        <Button primary>OTRAS CARRERAS </Button>
                                     </MenuLinkBtn>
                                     
                                 ): (
-                                    <MenuLinkBtn to="/noticia">
-                                        <Button primary bigFont onClick={closeMenu}>MAS NOTICIAS</Button>
+                                    <MenuLinkBtn to="/profesor">
+                                        <Button primary bigFont onClick={closeMenu}>OTRAS CARRERAS </Button>
                                     </MenuLinkBtn>
+
+                                
+
+
                                 )
-                                }
+                            }
+
+{button?(
+                                    <MenuLinkBtn to="/entra">
+                                        <Button primary>ME INTERESA </Button>
+                                    </MenuLinkBtn>
+                                    
+                                ): (
+                                    <MenuLinkBtn to="/entra">
+                                        <Button primary bigFont onClick={closeMenu}>ME INTERESA </Button>
+                                    </MenuLinkBtn>
+
+                                
+
+
+                                )
+                            }
                                 
 
                                 
                             </MenuItemBtn>
+                        
                         </MealsContent>       
                   
             

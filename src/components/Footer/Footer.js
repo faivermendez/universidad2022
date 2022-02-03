@@ -27,13 +27,14 @@ import {
     FooterLabel
 
 } from './Footer.styles';
-import logo from '../../images/logo.png';
+import LOGO from '../../images/LOGO.jpg';
+import LC from '../../images/LC.jpg';
 import LN from '../../images/LN.png';
 import LNC from '../../images/LNC.png';
 import LR from '../../images/LR.jpg';
 import LM from '../../images/LM.png';
 import LH from '../../images/LH.jpg';
-import LE from '../../images/LE.png';
+import LE from '../../images/LE.jpg';
 import LD from '../../images/LH.jpg';
 import LP from '../../images/LP.png';
 
@@ -58,116 +59,23 @@ const Footer = () => {
     
     return (
         <div>
-             <FoterSection>
-             <FoterContainer>
-            <WorksCardContent>
-
-                
-            <WorksCard>
-                <NavLogo to="/">
-                <Imgw src={logo}/>
-                
-                 </NavLogo>
-                 <MenuIcon onClick={handleClick}>
-                     {click ? <BiX/> : <BiMenu/>}
-                 </MenuIcon>
-                 </WorksCard>
-
-
-
-                <WorksCard>
-                <NavLogo to="noticia">
-                <Imgw src={LN}/>
-                
-                 </NavLogo>
-                 <MenuIcon onClick={handleClick}>
-                     {click ? <BiX/> : <BiMenu/>}
-                 </MenuIcon>
-                 </WorksCard>
-
-
-                 <WorksCard>
-                <NavLogo to="profesor">
-                <Imgw src={LNC}/>
-                
-                 </NavLogo>
-                 <MenuIcon onClick={handleClick}>
-                     {click ? <BiX/> : <BiMenu/>}
-                 </MenuIcon>
-                 </WorksCard>
-
-
-
-
-                 <WorksCard>
-                <NavLogo to="recipe">
-                <Imgw src={LR}/>
-                
-                 </NavLogo>
-                 <MenuIcon onClick={handleClick}>
-                     {click ? <BiX/> : <BiMenu/>}
-                 </MenuIcon>
-                 </WorksCard>
-
-
-                 <WorksCard>
-                <NavLogo to="directiva">
-                <Imgw src={LM}/>
-                
-                 </NavLogo>
-                 <MenuIcon onClick={handleClick}>
-                     {click ? <BiX/> : <BiMenu/>}
-                 </MenuIcon>
-                 </WorksCard>
-
-
-                 <WorksCard>
-                <NavLogo to="horario">
-                <Imgw src={LH}/>
-                
-                 </NavLogo>
-                 <MenuIcon onClick={handleClick}>
-                     {click ? <BiX/> : <BiMenu/>}
-                 </MenuIcon>
-                 </WorksCard>
-
-
-                 <WorksCard>
-                <NavLogo to="entra">
-                <Imgw src={LE}/>
-                
-                 </NavLogo>
-                 <MenuIcon onClick={handleClick}>
-                     {click ? <BiX/> : <BiMenu/>}
-                 </MenuIcon>
-                 </WorksCard>
-
-              
-
-                
-
-
-                 
-                 
-                 </WorksCardContent>
-                 </FoterContainer>
-                 </FoterSection>
-
+           
             <FooterSection>
                 
                 <FooterContainer>
                 
                     <FooterNewsletter>
                     <FooterNewsletterTitle></FooterNewsletterTitle>
-                        <FooterNewsletterTitle>UNIVERSIDAD AUTÓNOMA DE NEIVA</FooterNewsletterTitle>
+                        <FooterNewsletterTitle>UNIVERSIDAD AUTONOMA DE NEIVA</FooterNewsletterTitle>
                       
-                        <FooterNewsletterText>CALLE 12 No. 22-41</FooterNewsletterText>
+                        <FooterNewsletterText>CALLE 33 SUR NO 24-48</FooterNewsletterText>
+                        <FooterNewsletterText>TEL:8642992</FooterNewsletterText>
                        
                     </FooterNewsletter>   
                     <FooterLinkContainer>
                         
                     </FooterLinkContainer>
-                    Cada día más cerca de tus sueños
+                    pagina realizada por jhon soledad y faiber mendez
                     
                 </FooterContainer>
             </FooterSection>

@@ -1,10 +1,12 @@
-import { Horarios} from '../../components';
+import { Appr,Menu} from '../../components';
 
 function Horario() {
     return (
         <div>
             
-            <Horarios/>
+            <Appr/>
+            <Menu/>
+
         </div>
     )
 }

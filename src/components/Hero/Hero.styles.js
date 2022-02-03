@@ -7,10 +7,10 @@ background-image: linear-gradient( to top right, rgba(11, 10, 10, 0.38), rgba(11
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-height: 4vh;
+height: 2vh;
 
 @media only screen and (max-width:1600px) {
-    height: 35vh;
+    height: 10vh;
 }
 `;
 

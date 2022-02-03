@@ -403,10 +403,10 @@ margin-top:2rem;
 `;
 export const WorksContainer = styled(Container)`
 display: flex;
-flex-direction:column;
-justify-content:none;
-align-items:2 rem;
-padding:none;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 5rem 8rem;
 color: #333333;
 
 ${Container};
@@ -433,7 +433,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
-width: 30rem;
+width: 40rem;
 height: 30rem;
 background-color: #fff;
 box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.19);
@@ -448,7 +448,7 @@ transition: all .5s ease;
     }
 
     @media only screen and (min-width: 1500px){
-        margin-right: 1rem;
+        margin-right: 4rem;
     }
     @media only screen and (max-width:900px){
         margin-bottom: 10rem;
@@ -471,11 +471,12 @@ transition: all .5s ease;
 &:hover {
     box-shadow:  0px 10px 80px rgba(0, 0, 0, 0.21);
     transform: scale(1.05);
-    background-color: #336699;
-    color: #fff;
+    background-color: 9A1E03;
+    color: #333;
     
 }
 `;
+
 
 export const WorksIconContainer = styled.div`
 width: 9rem;

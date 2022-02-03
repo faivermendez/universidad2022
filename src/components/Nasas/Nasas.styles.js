@@ -63,6 +63,7 @@ export const Img = styled.img`
 `;
 
 export const MealsContent = styled.div`
+background: #CEECF5;
 padding: 0 10rem;
 @media only screen and (min-width:1800px){
     margin: 0 1200rem;
@@ -161,7 +162,16 @@ background-position: center;
 background-repeat: no-repeat;
 object-fit: cover;
 border-radius: 4px;
-height: 800px;
+height: 600px;
+`;
+
+export const Imgee = styled.img`
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+object-fit: cover;
+border-radius: 4px;
+height: 400px;
 `;
 
 export const MenuLink = styled(Link)`

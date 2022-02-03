@@ -42,8 +42,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
-width: 30rem;
-height: 30rem;
+width: 50rem;
+height: 20rem;
 background-color: #fff;
 box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.19);
 border-radius: 20px;
@@ -79,11 +79,20 @@ transition: all .5s ease;
 }
 &:hover {
     box-shadow:  0px 10px 80px rgba(0, 0, 0, 0.21);
-    transform: scale(1.7);
-    background-color: #970606;
+    transform: scale(1.2);
+    background-color: #0040FF;
     color: #fff;
     
 }
+`;
+
+export const Imger = styled.img`
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+object-fit: cover;
+border-radius: 4px;
+height: 800px;
 `;
 
 export const WorsCard = styled.div`
@@ -92,7 +101,7 @@ flex-direction: column;
 align-items: center;
 text-align: center;
 width: 30rem;
-height: 30rem;
+height: 100rem;
 background-color: #fff;
 box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.19);
 border-radius: 20px;

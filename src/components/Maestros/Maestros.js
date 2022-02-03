@@ -15,7 +15,8 @@ import {
     WorksCardTitle,
     MenuItemBtn,
     MenuLinkBtn,
-    WorksCardText
+    WorksCardText,
+    MenuLink,
 
     
    
@@ -61,101 +62,34 @@ const Maestros = () => {
            
             
         <WorksContent>
-        <RecipeTitle>PROFESORES</RecipeTitle>
+        <RecipeTitle>BIENVENIDO</RecipeTitle>
             <WorksContainer>
             
                 <WorksCardContent>
                 
                     <WorksCard>
-                        <Imge src={P1}/> 
+                        
+                        <MenuLink onClick={closeMenu} to="/entra"><Imge src={P1}/> </MenuLink>
                         <WorksCardTitle>  </WorksCardTitle>
-                        <WorksCardTitle>JHON SOLEDAD</WorksCardTitle>
-                        <WorksCardText>
-                            Maestro de Fisica.
-                            tel:3208628163
-                        </WorksCardText>
-                    </WorksCard>
-                    
-                    <WorksCard>
-                        <Imge src={P2}/>  
-                        <WorksCardTitle>SARA ROJAS</WorksCardTitle>
-                        <WorksCardText>
-                           maestra de quimica.  teL 3208659745
-                        </WorksCardText>
-                    </WorksCard>
-                    <WorksCard>
-                        <Imge src={P3}/> 
-                        <WorksCardTitle>ERIKA GONZALEZ</WorksCardTitle>
-                        <WorksCardText>
-                           maestra de artes tel:315487526.
-                        </WorksCardText>
-                    </WorksCard>
-                    <WorksCard>
-                        <Imge src={P4}/> 
-                        <WorksCardTitle>MARIO TORREZ</WorksCardTitle>
-                        <WorksCardText>
-                           maestro de matematicas.
-                        </WorksCardText>
-                    </WorksCard>
-                </WorksCardContent>
-            </WorksContainer>
-        <WorksContainer>
-            
-                <WorksCardContent>
-                    <WorksCard>
-                        <Imge src={P5}/> 
-                        <WorksCardTitle>  </WorksCardTitle>
-                        <WorksCardTitle>SANDRA CUELLAR</WorksCardTitle>
-                        <WorksCardText>
-                            Maestra de ingles.
-                            tel:3208628163
-                        </WorksCardText>
-                    </WorksCard>
-                    
-                    <WorksCard>
-                        <Imge src={P6}/>  
-                        <WorksCardTitle>SANTIAGO ROJAS</WorksCardTitle>
-                        <WorksCardText>
-                           maestro de sociales. 
-                        </WorksCardText>
-                    </WorksCard>
-                    <WorksCard>
-                        <Imge src={P7}/> 
-                        <WorksCardTitle>JUAN PEREZ</WorksCardTitle>
-                        <WorksCardText>
-                           maestro de biologia.
-                        </WorksCardText>
-                    </WorksCard>
-                    <WorksCard>
-                        <Imge src={P8}/> 
-                        <WorksCardTitle>RODRIGO SANCHEZ</WorksCardTitle>
-                        <WorksCardText>
-                           maestro de etica.
-                        </WorksCardText>
-                    </WorksCard>
-                </WorksCardContent>
-            </WorksContainer>
-        </WorksContent>
-        <WorksContent>
-        <WorksContent>
-        </WorksContent>
-        </WorksContent>
-        <WorksContent>
-        <MenuItemBtn>
-                                {button?(
-                                    <MenuLinkBtn to="/profesor">
-                                        <Button primary>VOLVER</Button>
-                                    </MenuLinkBtn>
-                                ): (
-                                    <MenuLinkBtn to="/profesor">
-                                        <Button primary bigFont onClick={closeMenu}>VOLVER</Button>
-                                    </MenuLinkBtn>
-                                )
-                                }
+                        <WorksCardTitle>ADMINISTRATIVO</WorksCardTitle>
 
-                                
-                            </MenuItemBtn>
-                            </WorksContent>
+                        
+                    </WorksCard>
+                    
+                    <WorksCard>
+                    <MenuLink onClick={closeMenu} to="/entrae"><Imge src={P2}/> </MenuLink>
+                        <WorksCardTitle> ESTUDIANTES</WorksCardTitle>
+                        </WorksCard>
+                    
+                </WorksCardContent>
+            </WorksContainer>
+            <WorksContainer></WorksContainer>
+        </WorksContent>
+       
+       
+        
+        
+      
     </div>
     );
 }

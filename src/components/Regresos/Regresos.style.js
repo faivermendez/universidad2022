@@ -7,6 +7,15 @@ display: flex;
 align-items: center;
 `;
 
+export const Imgee = styled.img`
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+object-fit: cover;
+border-radius: 4px;
+height: 400px;
+`;
+
 export const MealsWrapper = styled.div`
 display: flex;
 justify-content: center;

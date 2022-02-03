@@ -13,7 +13,7 @@ export const FooterSection = styled.section`
 display: flex;
 align-items: center;
 color: #fff;
-background-color: #8A0808;
+background-color: #08298A;
 `;
 export const FoterSection = styled.section`
 display: flex;
@@ -38,7 +38,7 @@ export const FooterContainer = styled(Container)`
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 5rem 10rem;
+padding: 5rem 5rem;
 
 ${Container}
 `;
@@ -298,7 +298,7 @@ height: 100%;
 transition: all .2s ease;
 
 &:hover {
-    color: #2986cc;
+    color: #B40404;
     transform: traslateY(-3rem);
     
 }

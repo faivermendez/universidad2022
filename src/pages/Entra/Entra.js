@@ -1,10 +1,11 @@
-import {Entrar} from '../../components';
+import {Entrar,Footer} from '../../components';
 
 function Entra() {
     return (
         <div>
            
             <Entrar/>
+            <Footer/>
            
             
             

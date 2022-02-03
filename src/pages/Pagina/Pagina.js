@@ -1,10 +1,11 @@
-import {Paginas} from '../../components';
+import {Paginas,Menu} from '../../components';
 
 function Pagina() {
     return (
         <div>
            
-            <Paginas/>
+           
+            <Menu/>
         </div>
     )
 }
